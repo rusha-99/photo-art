@@ -58,6 +58,16 @@ import img41 from './img/img41.jpg'
 import img42 from './img/img42.jpg'
 import img43 from './img/img43.jpg'
 import img44 from './img/img44.jpg'
+import img45 from './img/img45.jpg'
+import img46 from './img/img46.jpg'
+import img47 from './img/img47.jpg'
+import img48 from './img/img48.jpg'
+import img49 from './img/img49.jpg'
+import img50 from './img/img50.jpg'
+import img51 from './img/img51.jpg'
+import img52 from './img/img52.jpg'
+import img53 from './img/img53.jpg'
+
 
 const Gallery = () => {
   //   let data = [
@@ -282,6 +292,42 @@ const Gallery = () => {
       id: 44,
       imgSrc: img44,
     },
+    {
+      id: 45,
+      imgSrc: img45,
+    },
+    {
+      id: 46,
+      imgSrc: img46,
+    },
+    {
+      id: 47,
+      imgSrc: img47,
+    },
+    {
+      id: 48,
+      imgSrc: img48,
+    },
+    {
+      id: 49,
+      imgSrc: img49,
+    },
+    {
+      id: 50,
+      imgSrc: img50,
+    },
+    {
+      id: 51,
+      imgSrc: img51,
+    },
+    {
+      id: 52,
+      imgSrc: img52,
+    },
+    // {
+    //   id: 53,
+    //   imgSrc: img53,
+    // },
   ]
 
   const [model, setModel] = useState(false)
