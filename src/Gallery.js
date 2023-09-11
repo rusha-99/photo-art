@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import { ImCross } from 'react-icons/im'
 import img1 from './img/img1.jpg'
 import img3 from './img/img3.png'
 import img4 from './img/img4.jpg'
@@ -51,24 +52,26 @@ const Gallery = () => {
 
 
   return (
-      <>
-            <div className={model ? "model open" : "model"}>
+    <>
+      <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="mypic" />
-        
-        </div >
+        <ImCross onClick={()=>setModel(false)} />
+      </div>
 
-
-          <div className="gallery">
-              {data.map((item,index) => {
-                  return (
-                      <div className="pics" key={index} onClick={()=>getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt="mypic" style={{width:'100%'}} />
-                      </div>
-                  )
-              })}
-         </div>
-      
-      </>
+      <div className="gallery">
+        {data.map((item, index) => {
+          return (
+            <div
+              className="pics"
+              key={index}
+              onClick={() => getImg(item.imgSrc)}
+            >
+              <img src={item.imgSrc} alt="mypic" style={{ width: '100%' }} />
+            </div>
+          )
+        })}
+      </div>
+    </>
   )
 }
 
